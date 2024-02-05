@@ -26,7 +26,7 @@ const PostApp = () => {
         data.map((post) => {
           return (
             <div key={post.id}>
-            <img src="https://picsum.photos/200?random=${post.id}" alt="img" />
+            <img src={`https://picsum.photos/200?random=${post.id}`} alt="img" />
               <h3>{post.title}</h3>
               <p>{post.body}</p>
               <br />
